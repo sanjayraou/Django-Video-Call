@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Chat</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'css/Enter_meeting/Enter_meeting.css'%}"
+    />
+    <link
+      rel="shortcut icon"
+      href="{% static 'css/Enter_meeting/logo.png'%}"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="welcome_page_holder">
+      <div class="field_holder">
+        <div class="logo_container">
+          <img
+            src="{% static 'css/Enter_meeting/logo.png'%}"
+            alt=""
+            class="logo"
+          />
+          <p class="logo_text">VIDEO CHAT</p>
+        </div>
+        <p class="made_easy">Video Call made easy</p>
+        <form action="{% url 'welcome'%}" method="POST">
+          {% csrf_token %}
+          <div class="ent_username_container">
+            <ion-icon name="person-outline" class="user_icon"></ion-icon>
+            <input
+              type="text"
+              placeholder="Username"
+              class="ent_username"
+              id="username"
+              name="username"
+              required
+            />
+          </div>
+          <button type="submit" class="join-btn" id="btn-join">
+            JOIN CALL
+          </button>
+        </form>
+      </div>
+      <img src="{% static 'css/Enter_meeting/icon.png'%}" class="icon" alt="" />
+    </div>
+  </body>
+  <script src="{% static 'js/videocall/CallPage.js'%}">
+    DJANGO_STATIC_URL = '{{ STATIC_URL }}';
+  </script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>

@@ -1,0 +1,432 @@
+body {
+  background: #e3e3e3;
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background-color: #fff;
+  box-shadow: 2px 12px 12px rgba(0, 0, 0, 0.1);
+  padding: 0 5%;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+nav ul li a:hover {
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: brown;
+  font-size: 16px;
+  font-weight: 7e300;
+}
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #384d9d;
+  margin-left: 65px;
+}
+a {
+  text-decoration: none;
+}
+.logo-img {
+  width: 50px;
+  height: auto;
+  margin: 0px;
+  position: absolute;
+  float: left;
+}
+.join-meet-inp {
+  background-color: #dbdbdb;
+  padding: 3px;
+  width: 50%;
+  height: 20px;
+  border: 3px solid #384d9d;
+  border-radius: 4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.join-btn {
+  background-color: #384d9d;
+  color: #fff;
+  padding: 3px;
+  width: 35%;
+  height: 33px;
+  border: 3px solid #384d9d;
+  border-radius: 4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.user-image {
+  color: #171f24;
+  display: flex;
+  padding: 0px;
+  font-size: 1.5em;
+  margin-top: 8px;
+}
+.user_details {
+  margin: 0;
+  padding: 0;
+  height: 5vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.username {
+  color: #171f24;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  font-size: 15px;
+  display: inline-flex;
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-right: 10px;
+  align-items: center;
+}
+.mute-btn-icon {
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  background-color: #384d9d;
+  border: none;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 5px;
+  align-items: center;
+}
+.mute-btn-icon:hover {
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  background-color: #051452;
+  border: none;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 5px;
+  align-items: center;
+}
+.mute_icn_btn {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 100%;
+  font-size: 2.2em;
+}
+
+.endcall-btn-icon {
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  background-color: rgb(255, 68, 35);
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+.endcall-btn-icon:hover {
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  background-color: rgb(255, 43, 6);
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+.endcall_icn_btn {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 2.2em;
+  padding: 10px;
+}
+.middle_region {
+  position: relative;
+  margin-top: 0.5%;
+  justify-content: space-evenly;
+  align-items: center;
+  display: inline;
+}
+.video-region-1 {
+  width: 34%;
+  height: 74vh;
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin-left: 1.5%;
+  margin-top: 1%;
+  position: relative;
+  float: left;
+}
+
+.video-btn-icon {
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  background-color: #384d9d;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 5px;
+
+  cursor: pointer;
+  align-items: center;
+}
+.video-btn-icon:hover {
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  background-color: #122a7e;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 5px;
+
+  cursor: pointer;
+  align-items: center;
+}
+.video_icn_btn {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 2.2em;
+}
+
+.video-region-2 {
+  width: 34%;
+  height: 74vh;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  background-color: #000;
+  margin-top: 1%;
+  position: relative;
+  float: left;
+}
+
+.video-region-1 .local_video {
+  position: relative;
+  align-items: center;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  top: 18%;
+  justify-content: center;
+}
+.chat-box {
+  width: 26%;
+  height: 86vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin-left: 72.5%;
+  margin-top: 1%;
+  border: 3px solid #fff;
+  position: absolute;
+  float: left;
+}
+.msgs {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  float: left;
+  overflow-y: scroll;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+.send-msg-box {
+  background-color: rgb(202, 208, 241);
+  border: 2px solid transparent;
+  height: 8vh;
+  align-items: center;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  width: 95%;
+  margin: 0.5%;
+  position: absolute;
+  padding: 5px;
+  display: flex;
+
+  border-radius: 10px;
+}
+.messages-list {
+  text-align: center;
+  width: 80%;
+  height: 2vh;
+  padding: 5px;
+  margin: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1c2030;
+  font-weight: 650;
+}
+.entr-message {
+  background-color: #ecebf6;
+  border: 3px solid #1c2030;
+  border-radius: 10px;
+  color: #122a7e;
+  padding: 8px;
+  height: 3vh;
+  width: 75%;
+  margin: 0.5%;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  outline: none;
+}
+.entr-message::placeholder {
+  color: #232323;
+}
+.btn-snd-msg {
+  border: none;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  background-color: #384d9d;
+  color: #fff;
+  margin: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  float: right;
+  align-self: center;
+}
+
+.btn-snd-msg:hover {
+  border: none;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  background-color: #051452;
+  color: #fff;
+  margin: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  float: right;
+  align-self: center;
+}
+.send_icn {
+  font-size: 1.5em;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+}
+
+.bottom-controls {
+  width: 70%;
+  height: 73px;
+  background-color: #ffff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  float: left;
+  position: absolute;
+  margin-left: 1.5%;
+  top: 87.5%;
+  justify-content: space-between;
+}
+.icon-holder-controls {
+  margin-left: 40%;
+  margin-top: 1%;
+}
+.bottom-controls-left {
+  width: 26%;
+  height: 70px;
+  background-color: #ffff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  float: right;
+  margin-right: 1.5%;
+  margin-top: 1%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-record-btn {
+  position: relative;
+  display: inline;
+  align-items: center;
+  margin-top: 2%;
+  padding: 5px;
+  margin-right: 3%;
+}
+.btn-share-screen {
+  border: #384d9d 1px solid;
+  border-radius: 4px;
+  background-color: #384d9d;
+  color: #fff;
+  margin: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+}
+.btn-record-screen {
+  margin-left: 5%;
+  border: rgb(255, 64, 30) 1px solid;
+  border-radius: 4px;
+  background-color: rgb(255, 65, 31);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  padding: 5px;
+  margin: 2px;
+}
+.btn-share-screen:hover {
+  border: #384d9d 1px solid;
+  border-radius: 4px;
+  background-color: #384d9d;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  margin: 2px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: #a6b1db;
+}
+.btn-record-screen:hover {
+  border: rgb(255, 64, 30) 1px solid;
+  border-radius: 4px;
+  margin: 2px;
+  background-color: rgb(255, 65, 31);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}

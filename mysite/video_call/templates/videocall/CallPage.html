@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Call</title>
+ 
+    <link rel="stylesheet" href="{% static 'css/videocall/CallPage.css' %}" />
+    <link
+      rel="shortcut icon"
+      href="{% static 'css/videocall/logo.png'%}"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <section>
+      <nav>
+        <a href="" class="logo">VIDEO CHAT</a>
+        <img
+          src="{% static 'css/videocall/logo.png'%}"
+          alt="logo image"
+          onclick="location.href='../Enter Meeting page/Enter_meeting.html'"
+          class="logo-img"
+        />
+        <div class="user_details">
+          <ul>
+            <li>
+              <ion-icon name="person" class="user-image"></ion-icon>
+            </li>
+            <li><p class="username" id="label-username">{{data}}</p></li>
+          </ul>
+        </div>
+       
+      </nav>
+    </section>
+    <div class="middle_region">
+      <div class="video-region-1" id="video-container" >
+        <video id="local-video" class="local_video" autoplay="true" playsinline></video>
+        
+      </div>
+      <div class="video-region-2" id="video-container-2" ></div>
+        
+      </div>
+      <div class="chat-box">
+        <div id="messages" class='msgs'>
+          <ul id="message-list" class="messages-list"></ul>
+        </div>
+
+        <div id="ct" class='send-msg-box'><input id="msg" class="entr-message" placeholder="Type your message here">
+          <button id="btn-send-msg" class="btn-snd-msg" for='ct'>
+            <span class="send_icn"><ion-icon name="send"></ion-icon></span>
+          </button>
+        </div>
+				  </div>
+				</div>
+			  </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-region">
+      <div class="bottom-controls">
+  
+        <div class="icon-holder-controls">
+
+            <button id="btn-toggle-audio" class="mute-btn-icon">
+          <span class="mute_icn_btn" >
+            <ion-icon name="mic-off-outline" id="unmute_icon"></ion-icon>
+          </span>
+        </button>
+         
+      
+            <button class="endcall-btn-icon" onclick=location.href="{% url 'home' %}" href="{% url 'home' %}">
+              <span class="endcall_icn_btn" href="{% url 'home' %}"">
+                <ion-icon name="call-outline"></ion-icon>
+              </span>
+             
+            </button>
+         
+         
+            <button class="video-btn-icon" id="btn-toggle-video">
+              <span class="video_icn_btn">
+                <ion-icon name="videocam-off-outline" id="video_icn"></ion-icon>
+              </span>
+            </button>
+          
+        </div>
+			
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  <script src="{% static 'js/videocall/CallPage.js'%}">
+  DJANGO_STATIC_URL = '{{ STATIC_URL }}';
+  </script>
+</html>
