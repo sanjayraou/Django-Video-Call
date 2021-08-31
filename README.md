@@ -1,2 +1,5 @@
 # Django-Video-Call
-Real Time Video Calling App using Django
+Real time video calling app using Django
+
+This Project is Co-Developed by Sanjay Rao, Shwetha Hebbar and Shashikala
+
